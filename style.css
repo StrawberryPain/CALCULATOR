@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(197, 40, 64, 0.836);
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    height: 100vh;
+    font-family: "Unkempt", cursive;
+    user-select: none;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.express {
+    gap: 20px;
+}
+
+.express,
+.num {
+    width: 100%;
+    max-width: 1260px;
+}
+
+.express button, 
+.num .another {
+    text-align: center;
+    font-size: 60px;
+    background-color: rgb(128, 0, 128);
+    width: 300px;
+    height: 100px;
+    padding-top: 15px;
+    box-shadow: 0px 10px 1.5px rgb(105, 0, 105);
+    transition: 70ms;
+}
+
+.express button:hover, 
+.num .another:hover {
+    background-color: rgb(116, 0, 116);
+    box-shadow: 0px 10px 1.5px rgb(100, 0, 100);
+}
+
+.express button:active,
+.num .another:active {
+    background-color: rgb(93, 0, 93);
+    box-shadow: 0px 10px 1.5px rgb(74, 0, 74);
+}
+
+.express .result {
+    background-color: white;
+    flex-grow: 1;
+    height: 100px;
+    box-shadow: 0px 10px 1.5px rgb(208, 208, 208);
+    transition: 70ms;
+    color: purple;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 5px;
+}
+
+.num {
+    gap: 20px;
+}
+
+.num .equals {
+    background-color: gold;
+    box-shadow: 0px 10px 1.5px rgb(219, 186, 0);
+}
+
+.num .equals:hover {
+    background-color: rgb(216, 184, 0);
+    box-shadow: 0px 10px 1.5px rgb(196, 166, 0);
+}
+
+.num .equals:active {
+    background-color: rgb(193, 164, 0);
+    box-shadow: 0px 10px 1.5px rgb(182, 154, 0);
+}
+
+.num button {
+    text-align: center;
+    font-size: 60px;
+    background-color: rgb(203, 94, 203);
+    width: 300px;
+    height: 100px;
+    box-shadow: 0px 10px 1.5px rgb(180, 85, 180);
+}
+
+.num button:hover {
+    box-shadow: 0px 10px 1.5px rgb(137, 65, 137);
+    background-color: rgb(169, 80, 169);
+}
+
+.num button:active {
+    box-shadow: 0px 10px 1.5px rgb(105, 50, 105);
+    background-color: rgb(141, 67, 141);
+}
+
+.num button, .num .equals, .express .result, .express button {
+    border-radius: 12px;
+}
